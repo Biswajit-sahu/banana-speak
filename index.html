@@ -8,10 +8,18 @@
     <title>Banana Speak</title>
     <style>
         textarea {
+            border: 2px solid black;
             padding: 1rem;
             margin: 1rem;
             width: 80%;
-            height: auto;
+            height: 10vh;
+        }
+        #output{
+            border: 2px solid black;
+            padding: 1rem;
+            margin: 1rem;
+            width: 80%;
+            height: 10vh;
         }
     </style>
 </head>
@@ -22,6 +30,8 @@
     <textarea id="txt-input"
         placeholder="put your sentence here in english and we will convert it into banana "></textarea>
     <button id="btn-translate">ClickMe</button>
+    <div style="font-size: larger; padding: auto;">Output will come here 👇</div>
+    <div id="output"></div>
 
 
 
