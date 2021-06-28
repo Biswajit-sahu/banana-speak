@@ -12,14 +12,14 @@ function getTranslationURL(input) {
 
 function errorHandler(error) {
     console.log("error occured", error);
-    alert("something wrong with server! try again after some time")
+    alert("Something wrong with the server! Try again after some time")
 }
 
 
 function clickHandler() {
-    var inputText = txtInput.value; // taking input
+    var inputText = txtInput.value;   // input
 
-    // calling server for processing
+    //server callback
     fetch(getTranslationURL(inputText))
         .then(response => response.json())
         .then(json => {
